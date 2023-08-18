@@ -851,8 +851,10 @@ h3 {
 }
 
 
-.feedback-form-checkbox:checked + .original-checkbox {
-  fill: var(--accent-color);
+.feedback-form-checkbox:checked ~ .original-checkbox {
+  background-color: var(--hover-focus);
+  border: none;
+  fill: var(--white-text);
 }
 
 
