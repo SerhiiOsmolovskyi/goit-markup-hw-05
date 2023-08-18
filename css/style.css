@@ -760,6 +760,9 @@ h3 {
 .modal-input-container {
   margin-bottom: 8px;
 }
+.modal-textarea-container {
+  margin-bottom: 16px;
+}
 
 .modal-input {
   display: block;
@@ -781,7 +784,7 @@ h3 {
   background-color: transparent;
   padding-left: 38px;
   outline:transparent;
-  transition: border-color 250ms var(--transition-dur-and-func);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
 }
 
@@ -795,7 +798,7 @@ h3 {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms var(--transition-dur-and-func);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input-item:focus + .modal-icon  {
  fill: var(--accent-color);
@@ -814,7 +817,7 @@ h3 {
   padding: 8px 16px;
   outline: transparent;
   resize: none;
-  transition: border-color 250ms var(--transition-dur-and-func);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text-area:focus {
@@ -830,7 +833,7 @@ h3 {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--currentColor);
-  
+  display: block;
 }
 
 .original-checkbox {
@@ -847,9 +850,6 @@ h3 {
   fill: transparent;
 }
 
-.checkbox-icon {
-
-}
 
 .feedback-form-checkbox:checked ~ .original-checkbox {
   border: none;
