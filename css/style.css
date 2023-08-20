@@ -554,7 +554,7 @@ h3 {
   justify-content: center;
   color: var(--currentColor);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-list-link:hover,
@@ -652,11 +652,19 @@ h3 {
  background-color: var(--accent-color);
  border: none;
  border-radius: 4px;
+ transition: background-color var(--transition-dur-and-func);
 }
+
+
+.subscribe-btn:hover, 
+.subscribe-btn:focus {
+ background-color: var(--hover-focus);
+} 
+
 
 .subscribe-icon {
   margin-left: 16px;
- fill: var(--white-text);
+  fill: var(--white-text);
 }
 
 .email-input {
@@ -747,14 +755,14 @@ h3 {
 
 .modal-heading {
   color: var(--primary-color);
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    margin-bottom: 16px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .modal-input-container {
@@ -848,13 +856,14 @@ h3 {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 
 
-.feedback-form-checkbox:checked ~ .original-checkbox{
+.feedback-form-checkbox:checked + .feedback-form-checkbox-label>.original-checkbox {
   background-color: var(--hover-focus);
   border: none;
-  fill: var(--white-text);
+  fill: var(--secondary-color);
 }
 
 
@@ -878,6 +887,11 @@ h3 {
  border-radius: 4px;
  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  margin: 24px auto;
+}
+
+.feedback-btn:hover,
+.feedback-btn:focus {
+   background-color: var(--hover-focus);
 }
 
 .is-hidden {
