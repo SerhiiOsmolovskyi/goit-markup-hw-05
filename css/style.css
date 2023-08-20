@@ -860,10 +860,10 @@ h3 {
 }
 
 
-.feedback-form-checkbox:checked + .feedback-form-checkbox-label>.original-checkbox {
+.feedback-form-checkbox:checked + .feedback-form-checkbox-label > .original-checkbox {
   background-color: var(--hover-focus);
   border: none;
-  fill: var(--secondary-color);
+  fill: var(--white-text);
 }
 
 
