@@ -859,6 +859,10 @@ h3 {
   margin-right: 8px;
 }
 
+.feedback-form-checkbox:focus + .feedback-form-checkbox-label > .original-checkbox {
+  border: 1px solid var(--hover-focus);
+}
+
 
 .feedback-form-checkbox:checked + .feedback-form-checkbox-label > .original-checkbox {
   background-color: var(--hover-focus);
@@ -869,7 +873,14 @@ h3 {
 
 .privacy-link {
   color: var(--accent-color);
+  transition: color 250ms var(--transition-dur-and-func);
 }
+
+.privacy-link:hover,
+.privacy-link:focus {
+  color: var(--hover-focus);
+}
+
 
 .feedback-btn {
  display: block;
